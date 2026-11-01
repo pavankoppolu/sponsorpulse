@@ -1,0 +1,29 @@
+{
+  "projectId": "4f1dabfa-f691-4f01-8049-837e00d6ad6a",
+  "type": "frontend",
+  "name": "Generate cold outreach email and verify modal with pillars",
+  "description": "Verify that clicking Generate Email opens the draft modal, successfully generates an outreach email without backend errors, displays the Corporate, Campus, and Community outreach pillars, and saves the draft.",
+  "priority": "p0",
+  "planSteps": [
+    {
+      "type": "action",
+      "description": "Navigate to the homepage"
+    },
+    {
+      "type": "action",
+      "description": "On the Kanban pipeline board, locate any card with a Generate Email or Draft button and click it to open the outreach email composer modal"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify that the Email Draft modal opens with Subject line, Email body, and Pillar selector badges for Corporate, Campus, and Community Outreach"
+    },
+    {
+      "type": "action",
+      "description": "Click the Generate with Gemini or Save Draft button inside the modal"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify that no error toast appears, the email draft is successfully populated, and the card is displayed in the Drafted stage"
+    }
+  ]
+}

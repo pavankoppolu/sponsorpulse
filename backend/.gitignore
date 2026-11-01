@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env
+credentials/token.json
+credentials/credentials.json
+sponsorpulse.db
+*.db-journal
+

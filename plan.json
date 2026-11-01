@@ -1,0 +1,25 @@
+{
+  "projectId": "4f1dabfa-f691-4f01-8049-837e00d6ad6a",
+  "type": "frontend",
+  "name": "Sync funding feeds and verify outreach pipeline renders",
+  "description": "When a corporate engagement officer opens SponsorPulse and clicks Sync Funding Feed, the feed fetches recent funding news, displays companies in the Discovery Panel with funding badges, and loads the 6-stage Kanban board.",
+  "priority": "p0",
+  "planSteps": [
+    {
+      "type": "action",
+      "description": "Navigate to the homepage"
+    },
+    {
+      "type": "action",
+      "description": "Click the Sync Funding Feed button in the top navigation bar to trigger news ingestion"
+    },
+    {
+      "type": "action",
+      "description": "Scroll through the Funding Discovery panel on the left"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify the Funding Discovery panel shows discovered companies with funding details and the Kanban outreach pipeline displays columns for Discovered, Enriched, Drafted, Ready to Send, Sent, and Replied"
+    }
+  ]
+}
